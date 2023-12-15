@@ -19,7 +19,7 @@ export class PokemonListComponent {
   //Get Pokemons
   getPokemons(){
     this.dataService
-      .getPokemons(12, this.page + 12)
+      .getPokemons(12, this.page + 0)
       .subscribe((response: any) => {
         this.totalPokemons = response.count;
         response.results.forEach((result: any) => {
